@@ -10,8 +10,14 @@
 # 画面表示系
 # ==========================================
 APP_NAME = "対話型商品レコメンド生成AIアプリ"
+# サンプルアプリ３「対話型商品レコメンド生成AIアプリ」
+STOCK_STATUS_IN_STOCK = "あり"
+STOCK_STATUS_LOW_STOCK = "残りわずか"
+STOCK_STATUS_OUT_OF_STOCK = "なし"
 USER_ICON_FILE_PATH = "./images/user_icon.jpg"
 AI_ICON_FILE_PATH = "./images/ai_icon.jpg"
+# サンプルアプリ３「対話型商品レコメンド生成AIアプリ」
+WARNING_ICON = ":material/warning:"
 ERROR_ICON = ":material/error:"
 CHAT_INPUT_HELPER_TEXT = "こちらからお探しの商品の特徴や名前を入力してください。"
 SPINNER_TEXT = "レコメンドする商品の検討中..."

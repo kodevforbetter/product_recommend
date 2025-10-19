@@ -69,6 +69,13 @@ def display_product(result):
             価格：{product['price']}
     """)
 
+    # サンプルアプリ３「対話型商品レコメンド生成AIアプリ」
+    # 在庫状況の表示
+    if product['stock_status'] == ct.STOCK_STATUS_LOW_STOCK:
+        st.warning("ご好評につき、在庫数が残りわずかです。購入をご希望の場合、お早めのご注文をおすすめいたします。", icon=ct.WARNING_ICON)
+    elif product['stock_status'] == ct.STOCK_STATUS_OUT_OF_STOCK:
+        st.error("申し訳ございませんが、本商品は在庫切れとなっております。入荷までもうしばらくお待ちください。", icon=ct.ERROR_ICON)
+
     # 「商品カテゴリ」と「メーカー」と「ユーザー評価」
     st.code(f"""
         商品カテゴリ：{product['category']}\n
